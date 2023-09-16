@@ -1,0 +1,103 @@
+.contact {
+
+
+    &__inner {
+        @include section-padding-and-min-height;
+
+    }
+
+    &__title {
+
+        margin-bottom: 4rem;
+        font-size: 4.5rem;
+        font-weight: 600;
+        text-align: center;
+        text-transform: capitalize;
+
+        span {
+            color: var(--main-color);
+        }
+    }
+}
+
+.contact-form {
+    margin: 1rem auto;
+    max-width: 70vw;
+    text-align: center;
+
+    &__box {
+        margin-bottom: .7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input {
+        margin: .7rem 0;
+        width: 49%;
+    }
+
+    &__text-box {
+        margin: 0 auto 4rem;
+        display: block;
+        width: 100%;
+
+        resize: none;
+    }
+
+    &__input,
+    &__text-box {
+        padding: 1.5rem;
+        font-size: 1.6rem;
+
+        color: var(--main-color);
+        background: var(--bg-color);
+        border-radius: 1.2rem;
+        box-shadow: 0 .1rem .5rem var(--shadow-color);
+
+        outline: none;
+        border: none;
+    }
+}
+
+@media (max-width: 640px) {
+
+
+    .contact-form {
+
+
+        &__box {
+
+            flex-direction: column;
+        }
+
+        &__input {
+            width: auto;
+            flex-basis: 100%;
+        }
+        .contact-form__input, .contact-form__text-box {
+            padding: 1rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+
+
+        &__title {
+            font-size: 2.6rem;
+        }
+
+    }
+
+}
+
+@media (max-width: 380px) {
+    .contact {
+
+        .button {
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+        }
+    }
+}

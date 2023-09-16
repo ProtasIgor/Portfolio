@@ -1,0 +1,15 @@
+@mixin section-padding-and-min-height {
+    padding: 10rem 7vw 2rem;
+
+    min-height: 100vh;
+
+    /* @media (max-width: 700px) {
+
+    } */
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,151 @@
+.experience {
+
+
+
+    &__inner {
+        @include section-padding-and-min-height;
+        padding-top: 20rem;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 4rem;
+    }
+
+    &__title {
+        font-size: 4.5rem;
+        line-height: 1.2;
+
+        text-align: center;
+        text-transform: capitalize;
+
+        span {
+            color: var(--main-color);
+        }
+    }
+
+    &__container {
+        @include flex-center;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+        gap: 4rem;
+    }
+
+    &__box {
+        width: 600px;
+
+        padding: 4rem;
+
+        border: .4rem solid var(--main-color);
+        border-radius: 2.5rem;
+
+    }
+
+    &__subtitle {
+        margin-bottom: 3rem;
+
+        font-size: 2.4rem;
+        text-transform: capitalize;
+        text-align: center;
+
+        span {
+            color: var(--main-color);
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        grid-auto-columns: 1fr 1fr;
+
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        font-size: 2.2rem;
+
+        i {
+            color: var(--main-color);
+
+        }
+    }
+
+    &__name {
+        font-weight: 600;
+
+        text-transform: capitalize;
+        text-align: center;
+
+        color: var(--text-color);
+    }
+}
+
+@media (max-width: 620px) {
+    .experience {
+
+
+        &__container {
+            justify-content: stretch;
+
+            gap: 4rem;
+        }
+
+        &__box {
+            padding: 2rem;
+
+            width: auto;
+            justify-content: stretch;
+            flex-grow: 1;
+        }
+
+        &__item {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .experience {
+
+
+
+
+        &__list {
+            margin-left: 30%;
+
+            grid-template-columns: 1fr;
+
+            justify-items: start;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .experience {
+
+
+        &__title {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .experience {
+
+
+        &__title {
+            font-size: 2.6rem;
+        }
+
+        &__list {
+            margin-left: 10%;
+        }
+    }
+}
